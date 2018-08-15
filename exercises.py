@@ -63,9 +63,9 @@ check_login(this)
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
 def malware_type(malware):
-    if malware=='adware'
+    if malware=='adware':
         print('Low Threat')
-    elif malware==virus:
+    elif malware=='virus':
         print('Do not share files')
     else:
         print('I hope you backed up your data')
@@ -78,13 +78,13 @@ malware_type('virus')
 
 #The function will print 'Encryption Success' if the keys passed into function has 5 characters and print 'Encryption Fail' if it doesn't.
 def encryption(keys):
-    if len(keys)==5:
+    if len(str(keys))==5:
         print('Encryption success')
     else:
         print('Encryption fail')
 
 this=input('Input key: ')
-encryption(key)
+encryption(this)
 
 
 #8 Function even_cryptography
@@ -92,7 +92,7 @@ encryption(key)
 
 #The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
 def even_crytopgraphy(num):
-    if num%2=0:
+    if int(num)%2==0:
         print('Decryption succcess')
     else:
         print('Decription fail')
