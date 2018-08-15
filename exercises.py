@@ -152,6 +152,14 @@ largest_num(8,6,23)
 #Create a function named pos_neg which takes a parameter num.
 
 #The function will print 'Positive Number' if the number passed in is positive, print 'Zero' if the number is 0 and print 'Negative Number' for a negative number.
+def pos_neg(num):
+    if num<0:
+        print('negative number')
+    elif num==0:
+        print('Zero')
+    else:
+        print('Positive number')
+
 
 #13 Function name_caps
 #Create a function named name_caps which takes a parameter name.
@@ -161,7 +169,17 @@ largest_num(8,6,23)
 #if characters in name <=5: capitalize the first letter in the name
 #if characters in name <=10: captialize all the letters in the name
 #if characters in name >10: leave the letters as is
+def name_caps(name):
+    if len(name)<=5:
+        return name.title()
+    elif len(name)<=10:
+        return name.upper()
+    else:
+        return name
 
+this=input('Input the name: ')
+check=name_caps(this)
+print(check)
 #Print your results
 
 #14 Function leap_year
@@ -170,5 +188,16 @@ largest_num(8,6,23)
 
 #Create a function named leap_year which takes a parameter year.
 #The function will print 'The year x is a leap year.' where x is the year value that is passed into the function and print 'The year x is not a leap year.' if it isn't a leap year.
+def leap_year(year):
+    if year%4==0:
+        if year%400==0:
+            print('The year ' + str(year) + " is a leap year.")
+        elif year%100==0:
+            print('The year ' + str(year) + " is not a leap year.")
+        else:
+            print('The year ' + str(year) + " is a leap year.")
+    else:
+        print('The year ' + str(year) + " is not a leap year.")
 
-
+check=input("Input year: ")
+leap_year(int(check))
