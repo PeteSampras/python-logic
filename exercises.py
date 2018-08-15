@@ -52,7 +52,7 @@ def check_login(str):
     else:
         print('Re-enter Login')
 
-this=input('Input Login')
+this=input('Input Login: ')
 check_login(this)
 
 #6 Function malware_type
@@ -62,16 +62,45 @@ check_login(this)
 #if malware is adware: 'Low Threat'
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
+def malware_type(malware):
+    if malware=='adware'
+        print('Low Threat')
+    elif malware==virus:
+        print('Do not share files')
+    else:
+        print('I hope you backed up your data')
+
+malware_type('virus')
+
 
 #7 Function encryption
 #Create a function named encryption which takes a parameter keys.
 
 #The function will print 'Encryption Success' if the keys passed into function has 5 characters and print 'Encryption Fail' if it doesn't.
+def encryption(keys):
+    if len(keys)==5:
+        print('Encryption success')
+    else:
+        print('Encryption fail')
+
+this=input('Input key: ')
+encryption(key)
+
 
 #8 Function even_cryptography
 #Create a function named even_cryptography which takes a parameter num.
 
 #The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
+def even_crytopgraphy(num):
+    if num%2=0:
+        print('Decryption succcess')
+    else:
+        print('Decription fail')
+
+this=input('Input number to decrypt: ')
+even_crytopgraphy(this)
+
+
 
 #9 Function bandwidth
 #Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
