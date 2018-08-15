@@ -104,10 +104,21 @@ even_crytopgraphy(this)
 
 #9 Function bandwidth
 #Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
-
+mbps = [100,200,300,400,500]
 #Next, create a function named bandwidth which takes a parameter usage.
 #The function will sum up the list of numbers and print the following messages based on the condition:
+def bandwidth(sum):
+    if sum<=50:
+        print('Light user')
+    elif sum<=100:
+        print('Moderate user')
+    elif sum<=150:
+        print('Multi media user')
+    else:
+        print('Power user')
 
+this=sum(mbps)
+bandwidth(this)
 #if sum <= 50: 'Light User'
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
@@ -119,12 +130,24 @@ even_crytopgraphy(this)
 #The function will return false if public and private aren't equal and return true if they are equal.
 
 #Declare a variable named ssh_connection and print your result.
+def ssh_keys(public,private):
+    if public==private:
+        return True
+    else:
+        return False
+this=input("Provide public key: ")
+that = 12345
+compare=ssh_keys(this,that)
 
 #11 Function largest_num
 #Create a function named largest_num which takes three parameters: num_1, num_2 and num_3.
 
 #The function will find the largest number among any three numbers that are passed into the function. Declare a variable named large_num_result and print your results.
+def largest_num(num_1,num_2,num_3):
+    large_num_result=max(num_1,num_2,num_3)
+    print(large_num_result)
 
+largest_num(8,6,23)
 #12 Function pos_neg
 #Create a function named pos_neg which takes a parameter num.
 
